@@ -510,46 +510,40 @@ section {
 /*Project Section---------------------------------*/
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1080px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
 }
 
 .port-box {
     position: relative;
-    border-radius: 1080px;
+    border-radius: 10px; /* Reduced from 1080px for better appearance */
     overflow: hidden;
     background: #292e33;
-    display: flex;
-    grid-template-rows: 4fr auto;
-    align-items: center;
+    aspect-ratio: 1/1; /* Ensures square ratio */
+    width: 1080px; /* Fixed width */
+    max-width: 100%; /* Ensures responsiveness */
     border: 2px solid var(--hover-color);
     box-shadow: var(--neon-box-shadow);
-    width: 1080px;
-    /* حجم العرض المطلوب */
-    /* حجم الطول المطلوب */
-    min-height: 14em;
-    margin: 1080px;
-    transition: 0.7 ease;
-}
-
-.portfolio-gallery .port-box {
-    margin-top: 1080px;
+    transition: 0.3s ease;
+    margin: 1rem auto; /* Reasonable margin */
 }
 
 .port-image {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1080px;
-    width: 1080px;
 }
 
-    .port-image img {
-        width: 1080px;
-        opacity: .5s;
-        height: 1080px;
-        transition: .5s;
-    }
+.port-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents image distortion */
+    transition: 0.5s;
+}
 
 .port-content {
     position: absolute;
