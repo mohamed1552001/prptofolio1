@@ -516,7 +516,7 @@ section {
 
 .port-box {
     position: relative;
-    border-radius: 50px;
+    border-radius: 1080px;
     overflow: hidden;
     background: #292e33;
     display: flex;
@@ -528,12 +528,12 @@ section {
     /* حجم العرض المطلوب */
     /* حجم الطول المطلوب */
     min-height: 14em;
-    margin: 20px;
+    margin: 1080px;
     transition: 0.7 ease;
 }
 
 .portfolio-gallery .port-box {
-    margin-top: 30px;
+    margin-top: 1080px;
 }
 
 .port-image {
@@ -545,9 +545,9 @@ section {
 }
 
     .port-image img {
-        width: 100px;
+        width: 1080px;
         opacity: .5s;
-        height: 100px;
+        height: 1080px;
         transition: .5s;
     }
 
