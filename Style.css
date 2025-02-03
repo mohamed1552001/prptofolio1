@@ -510,7 +510,7 @@ section {
 /*Project Section---------------------------------*/
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1080px, 1fr));
     gap: 1rem;
 }
 
@@ -524,7 +524,7 @@ section {
     align-items: center;
     border: 2px solid var(--hover-color);
     box-shadow: var(--neon-box-shadow);
-    width: 500px;
+    width: 1080px;
     /* حجم العرض المطلوب */
     /* حجم الطول المطلوب */
     min-height: 14em;
@@ -540,8 +540,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100px;
+    height: 1080px;
+    width: 1080px;
 }
 
     .port-image img {
